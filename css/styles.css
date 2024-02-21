@@ -44,6 +44,10 @@ img {
   margin-right: auto;
 }
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .section-bg {
   background-color: #2e2f42;
 }
@@ -102,7 +106,7 @@ img {
 
 .contacts-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .contacts-link {
@@ -117,7 +121,7 @@ img {
   color: #404bbf;
 }
 
-.hero-container {
+.hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -126,7 +130,7 @@ img {
 .section-title {
   margin-right: auto;
   margin-left: auto;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 
   font-size: 56px;
@@ -138,6 +142,12 @@ img {
 
 .btn {
   padding: 16px 32px;
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 
   font-weight: 500;
   font-size: 16px;
@@ -165,14 +175,14 @@ img {
   overflow: hidden;
 }
 
-.achievement-container {
+.achievement {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .achievement-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .achievement-item {
@@ -180,6 +190,7 @@ img {
 }
 
 .achievement-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -218,12 +229,12 @@ img {
   gap: 24px;
 }
 .team-item {
-  padding-bottom: 32px;
+  border-radius: 0 0 4px 4px;
   background-color: #ffffff;
 }
 
-.team-img {
-  margin-bottom: 32px;
+.team-block {
+  padding: 32px 0;
 }
 
 .team-name {
@@ -245,7 +256,7 @@ img {
   color: #434455;
 }
 
-.portfolio-container {
+.portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -268,17 +279,15 @@ img {
   row-gap: 48px;
 }
 
-.portfolio-item {
-  padding-bottom: 32px;
-}
+.portfolio-block {
+  padding: 32px 16px;
 
-.portfolio-img {
-  margin-bottom: 32px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-app {
   margin-bottom: 8px;
-  padding-left: 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -287,7 +296,6 @@ img {
 }
 
 .portfolio-text {
-  padding-left: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -295,16 +303,15 @@ img {
 }
 
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
   background: #2e2f42;
 }
 
-.footer-container {
-  padding-top: 101.5px;
-  padding-bottom: 100px;
-}
 .footer-logo {
-  display: block;
-  margin-bottom: 17px;
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
