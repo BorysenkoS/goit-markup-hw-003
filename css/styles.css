@@ -79,7 +79,7 @@ img {
 }
 
 .nav-list {
-  column-gap: 40px;
+  gap: 40px;
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -206,12 +206,10 @@ img {
 }
 
 .team {
-  background-color: #f4f4fd;
-}
-
-.team-container {
   padding-top: 120px;
   padding-bottom: 120px;
+
+  background-color: #f4f4fd;
 }
 
 .team-title {
